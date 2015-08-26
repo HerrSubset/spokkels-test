@@ -31,8 +31,9 @@
         Het aanmaken van je kalender is zeer simpel. Selecteer in de onderstaande dropdowns eerst je sportbond, vervolgens je reeks en als laatste je team. Er verschijnt nu een link die jouw kalender bevat. Volg de <a href="#">instructies</a> onderaan deze pagina om via deze link je kalender te importeren de online agenda die je gebruikt.
       </p>
       <form class="" action="index.html" method="post" id="create-calendar">
-        <label for="job">Sportbond</label>
-
+        <h3>Kies je team</h3>
+        <fieldset>
+          <label for="job">Sportbond</label>
           <select id="job" name="user_job">
             <optgroup label="Volleybal">
               <option value="frontend_developer">Vlaamse Volleybalbond (VVB)</option>
@@ -59,6 +60,13 @@
               <option value="php_developer">Wezo</option>
               <option value="python_developer">Amigos Zoersel</option>
           </select>
+      </fieldset>
+
+      <fieldset>
+        <h3>Jouw kalender-URL</h3>
+        <input type="text" name="kalender-url" value="https://spokkels.com/aoiejf.ics" readonly>
+      </fieldset>
+
       </form>
     </section>
 
