@@ -7,7 +7,7 @@
     <title>Spokkels | Home</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>Spokkels</h1>
       <nav class="main-nav">
         <ul>
@@ -18,77 +18,79 @@
       </nav>
     </header>
 
-    <section>
-      <h2>Jouw sportkalender snel en eenvoudig in je online agenda</h2>
-      <p>
-        Church-key fanny pack selfies, blog post-ironic mixtape Shoreditch PBR. Cornhole Bushwick bitters, meditation Truffaut trust fund 3 wolf moon ethical butcher XOXO. Sartorial church-key Pitchfork distillery polaroid. Synth yr tousled, shabby chic drinking vinegar ennui mumblecore deep v Wes Anderson retro scenester pop-up. Kickstarter lumbersexual single-origin coffee Tumblr bitters fixie. Schlitz squid street art Bushwick, actually lomo wolf. Health goth kale chips locavore, Neutra trust fund Kickstarter fanny pack beard iPhone wayfarers readymade tote bag church-key Austin literally.
-      </p>
-      <a href="#create-calendar">Maak Mijn Kalender</a>
-    </section>
+    <div class="wrapper">
 
-    <section id="create-calendar">
-      <h2>Creëer Mijn Kalender</h2>
-      <p>
-        Het aanmaken van je kalender is zeer simpel. Selecteer in de onderstaande dropdowns eerst je sportbond, vervolgens je reeks en als laatste je team. Er verschijnt nu een link die jouw kalender bevat. Volg de <a href="#">instructies</a> onderaan deze pagina om via deze link je kalender te importeren de online agenda die je gebruikt.
-      </p>
-      <form class="" action="index.html" method="post" id="create-calendar">
-        <h3>Kies je team</h3>
-        <fieldset>
-          <label for="sportbond">Sportbond</label>
-          <select id="sportbond" name="user_sportbond">
-            <optgroup label="Volleybal">
-              <option value="vvb">Vlaamse Volleybalbond (VVB)</option>
-              <option value="avf">Antwerpse Volleybal Federatie (AVF)</option>
-              <option value="vlm">VLM</option>
-            </optgroup>
-            <optgroup label="Voetbal">
-              <option value="kbvb">KBVB</option>
-              </optgroup>
-          </select>
-
-
-          <label for="reeks">Reeks</label>
-          <select id="reeks" name="user_reeks">
-              <option value="liga_a">Liga A</option>
-              <option value="liga_b">Liga B</option>
-              <option value="1e_divisie_heren_a">1e Divisie Heren A</option>
-          </select>
-
-
-          <label for="team">Team</label>
-          <select id="team" name="user_team">
-              <option value="mendo_booischot">Mendo Booischot</option>
-              <option value="wezo">Wezo</option>
-              <option value="amigos_zoersel">Amigos Zoersel</option>
-          </select>
-      </fieldset>
-
-      <fieldset>
-        <h3>Jouw kalender-URL</h3>
-        <input type="text" name="kalender-url" value="https://spokkels.com/aoiejf.ics" readonly>
-      </fieldset>
-
-      </form>
-    </section>
-
-    <section>
-      <h2>Instructies</h2>
-      <nav>
-        <ul>
-          <li><a href="#google-calendar-instructions">Google Calendar</a></li>
-        </ul>
-      </nav>
-
-      <section id="google-calendar-instructions">
-        <h3>Google Calendar</h3>
-        <ol>
-          <li>Ga naar <a href="https://www.google.com/calendar">Google Calendar</a> en meld je aan.</li>
-          <li>In de linker kolom klik je op het pijltje rechts naast "Andere agenda's". In het drop-down menu dat verschijnt klik je op "Toevoegen via URL".</li>
-          <li>Kopiëer nu je link in het venster dat verschijnt en klik op "toevoegen". De kalender die je gekozen hebt is nu beschikbaar in Google Calendar.</li>
-        </ol>
+      <section>
+        <h2 class="attention-heading">Jouw sportkalender snel en eenvoudig in je online agenda.</h2>
+        <p>
+          Church-key fanny pack selfies, blog post-ironic mixtape Shoreditch PBR. Cornhole Bushwick bitters, meditation Truffaut trust fund 3 wolf moon ethical butcher XOXO. Sartorial church-key Pitchfork distillery polaroid. Synth yr tousled, shabby chic drinking vinegar ennui mumblecore deep v Wes Anderson retro scenester pop-up. Kickstarter lumbersexual single-origin coffee Tumblr bitters fixie. Schlitz squid street art Bushwick, actually lomo wolf. Health goth kale chips locavore, Neutra trust fund Kickstarter fanny pack beard iPhone wayfarers readymade tote bag church-key Austin literally.
+        </p>
+        <a href="#create-calendar">Maak Mijn Kalender</a>
       </section>
 
-    </section>
+      <section id="create-calendar">
+        <h2>Creëer Mijn Kalender</h2>
+        <p>
+          Het aanmaken van je kalender is zeer simpel. Selecteer in de onderstaande dropdowns eerst je sportbond, vervolgens je reeks en als laatste je team. Er verschijnt nu een link die jouw kalender bevat. Volg de <a href="#">instructies</a> onderaan deze pagina om via deze link je kalender te importeren de online agenda die je gebruikt.
+        </p>
+        <form class="" action="index.html" method="post" id="create-calendar">
+          <fieldset>
+            <h3>Kies je team</h3>
+            <label for="sportbond">Sportbond</label>
+            <select id="sportbond" name="user_sportbond">
+              <optgroup label="Volleybal">
+                <option value="vvb">Vlaamse Volleybalbond (VVB)</option>
+                <option value="avf">Antwerpse Volleybal Federatie (AVF)</option>
+                <option value="vlm">VLM</option>
+              </optgroup>
+              <optgroup label="Voetbal">
+                <option value="kbvb">KBVB</option>
+                </optgroup>
+            </select>
 
+
+            <label for="reeks">Reeks</label>
+            <select id="reeks" name="user_reeks">
+                <option value="liga_a">Liga A</option>
+                <option value="liga_b">Liga B</option>
+                <option value="1e_divisie_heren_a">1e Divisie Heren A</option>
+            </select>
+
+
+            <label for="team">Team</label>
+            <select id="team" name="user_team">
+                <option value="mendo_booischot">Mendo Booischot</option>
+                <option value="wezo">Wezo</option>
+                <option value="amigos_zoersel">Amigos Zoersel</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+          <h3>Jouw kalender-URL</h3>
+          <input type="text" name="kalender-url" value="https://spokkels.com/aoiejf.ics" readonly>
+        </fieldset>
+
+        </form>
+      </section>
+
+      <section>
+        <h2>Instructies</h2>
+        <nav>
+          <ul>
+            <li><a href="#google-calendar-instructions">Google Calendar</a></li>
+          </ul>
+        </nav>
+
+        <section id="google-calendar-instructions">
+          <h3>Google Calendar</h3>
+          <ol>
+            <li>Ga naar <a href="https://www.google.com/calendar">Google Calendar</a> en meld je aan.</li>
+            <li>In de linker kolom klik je op het pijltje rechts naast "Andere agenda's". In het drop-down menu dat verschijnt klik je op "Toevoegen via URL".</li>
+            <li>Kopiëer nu je link in het venster dat verschijnt en klik op "toevoegen". De kalender die je gekozen hebt is nu beschikbaar in Google Calendar.</li>
+          </ol>
+        </section>
+
+      </section>
+    </div> <!-- end wrapper -->
   </body>
 </html>
