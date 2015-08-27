@@ -13,12 +13,6 @@ h1 {
   text-align: center;
 }
 
-section {
-  text-align: center;
-  border-bottom: #444 solid 4px;
-  padding: 30px 10px;
-}
-
 p {
   line-height: 2em;
 }
@@ -89,6 +83,12 @@ a:visited {
 .wrapper {
   max-width: 960px;
   margin: auto;
+}
+
+.main-section {
+  text-align: center;
+  border-bottom: #444 solid 4px;
+  padding: 30px 10px;
 }
 
 .big-button {
