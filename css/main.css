@@ -13,6 +13,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 1.75em;
+}
+
 p {
   line-height: 2em;
 }
@@ -102,6 +106,31 @@ a:visited {
 .big-button:hover {
   background-color: #444;
   color: white;
+}
+
+#create-calendar form {
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+#create-calendar select,
+#create-calendar input,
+#create-calendar label {
+  display: block;
+  text-align: left;
+}
+
+#create-calendar select + label {
+  margin-top: 15px;
+}
+
+#create-calendar select,
+#create-calendar input {
+  width: 100%;
+}
+
+#create-calendar fieldset {
+  border: none;
 }
 
 
