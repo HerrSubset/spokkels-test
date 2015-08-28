@@ -177,6 +177,7 @@ a.big-button {
 
 .instructions-section ol{
   text-align: left;
+  padding-right: 20px;
 }
 
 .instructions-section li {
