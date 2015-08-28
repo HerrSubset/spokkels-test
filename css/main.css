@@ -29,6 +29,11 @@ p {
   line-height: 2em;
 }
 
+.wrapper {
+  max-width: 960px;
+  margin: auto;
+}
+
 /*******************************************************************************
 ** pseudo classes
 *******************************************************************************/
@@ -86,6 +91,9 @@ a:hover {
 
 
 
+/*******************************************************************************
+** first section styles
+*******************************************************************************/
 .attention-heading {
   font-weight: normal;
   font-size: 2em;
@@ -94,16 +102,6 @@ a:hover {
   padding-right: 25px;
   font-weight: normal;
   text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-
-
-/*******************************************************************************
-** main styles
-*******************************************************************************/
-.wrapper {
-  max-width: 960px;
-  margin: auto;
 }
 
 .main-section {
@@ -129,6 +127,12 @@ a.big-button {
 .big-button:hover {
   box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
 }
+
+
+
+/*******************************************************************************
+** form section styles
+*******************************************************************************/
 
 #create-calendar form {
   background-color: #eee;
@@ -156,13 +160,29 @@ a.big-button {
 }
 
 
-/*******************************************************************************
-** layout styles
-*******************************************************************************/
-
-
-
 
 /*******************************************************************************
-** float stuff
+** instructions section styles
 *******************************************************************************/
+.instructions-section {
+  background-color: #eee;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.instructions-section + .instructions-section {
+  margin-top: 30px;
+}
+
+.instructions-section ol{
+  text-align: left;
+}
+
+.instructions-section li {
+  line-height: 1.5em;
+}
+
+.instructions-section li + li {
+  margin-top: 15px;
+}
