@@ -2,11 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
     <title>Spokkels | Home</title>
+
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
   </head>
   <body>
@@ -39,33 +43,39 @@
         <form class="" action="index.html" method="post" id="create-calendar">
           <fieldset>
             <h3>Kies je team</h3>
-            <label for="sportbond">Sportbond</label>
-            <select id="sportbond" name="user_sportbond">
-              <optgroup label="Volleybal">
-                <option value="vvb">Vlaamse Volleybalbond (VVB)</option>
-                <option value="avf">Antwerpse Volleybal Federatie (AVF)</option>
-                <option value="vlm">VLM</option>
-              </optgroup>
-              <optgroup label="Voetbal">
-                <option value="kbvb">KBVB</option>
+
+            <div class="formgroup">
+              <label for="sportbond">Sportbond</label>
+              <select id="sportbond" name="user_sportbond">
+                <optgroup label="Volleybal">
+                  <option value="vvb">Vlaamse Volleybalbond (VVB)</option>
+                  <option value="avf">Antwerpse Volleybal Federatie (AVF)</option>
+                  <option value="vlm">VLM</option>
                 </optgroup>
-            </select>
+                <optgroup label="Voetbal">
+                  <option value="kbvb">KBVB</option>
+                  </optgroup>
+              </select>
+            </div>
 
 
-            <label for="reeks">Reeks</label>
-            <select id="reeks" name="user_reeks">
-                <option value="liga_a">Liga A</option>
-                <option value="liga_b">Liga B</option>
-                <option value="1e_divisie_heren_a">1e Divisie Heren A</option>
-            </select>
+            <div class="formgroup">
+              <label for="reeks">Reeks</label>
+              <select id="reeks" name="user_reeks">
+                  <option value="liga_a">Liga A</option>
+                  <option value="liga_b">Liga B</option>
+                  <option value="1e_divisie_heren_a">1e Divisie Heren A</option>
+              </select>
+            </div>
 
-
-            <label for="team">Team</label>
-            <select id="team" name="user_team">
-                <option value="mendo_booischot">Mendo Booischot</option>
-                <option value="wezo">Wezo</option>
-                <option value="amigos_zoersel">Amigos Zoersel</option>
-            </select>
+            <div class="formgroup">
+              <label for="team">Team</label>
+              <select id="team" name="user_team">
+                  <option value="mendo_booischot">Mendo Booischot</option>
+                  <option value="wezo">Wezo</option>
+                  <option value="amigos_zoersel">Amigos Zoersel</option>
+              </select>
+            </div>
         </fieldset>
 
         <fieldset>

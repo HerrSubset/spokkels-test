@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px) {
+
+
+  /********************************************
+  ** Form
+  ********************************************/
+  #create-calendar  form{
+    text-align: left;
+  }
+
+  #create-calendar .formgroup {
+    width: 32%;
+    float: left;
+  }
+
+  #create-calendar .formgroup + .formgroup {
+    margin-left: 2%;
+  }
+
+}
